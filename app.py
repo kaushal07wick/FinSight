@@ -16,13 +16,13 @@ embedder = TextEmbedding()
 # Load the stored CSV with scraped data and sentiment analysis
 @st.cache_data
 def load_data():
-    return pd.read_csv("C:/Users/Lenovo/Documents/Experiment/FinSight/data/main_jpm_transcripts.csv")
+    return pd.read_csv("FinSight/data/main_jpm_transcripts.csv")
 
 df = load_data()
 
 @st.cache_data
 def load_sentiment_data():
-    return pd.read_csv('C:/Users/Lenovo/Documents/Experiment/FinSight/data/sentiment_analysis_jpm.csv')
+    return pd.read_csv('FinSight/data/sentiment_analysis_jpm.csv')
 
 sent_df = load_sentiment_data()
 
