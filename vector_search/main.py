@@ -5,7 +5,7 @@ import uuid
 from qdrant_client.models import PointStruct
 
 # Load CSV
-df = pd.read_csv(r"C:/Users/Lenovo/Documents/Experiment/scraping/data/main_jpm_transcripts.csv")
+df = pd.read_csv(r"FinSight/data/main_jpm_transcripts.csv")
 
 if 'Title' not in df.columns or 'Text' not in df.columns:
     raise ValueError("CSV must contain 'Title' and 'Text' columns")

@@ -2,7 +2,7 @@ import pandas as pd
 from textblob import TextBlob
 import matplotlib.pyplot as plt
 
-df = pd.read_csv(r"C:/Users/Lenovo/Documents/Experiment/scraping/data/main_jpm_transcripts.csv", index_col=0)
+df = pd.read_csv(r"FinSight/data/main_jpm_transcripts.csv", index_col=0)
 
 print(df.head())
 

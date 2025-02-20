@@ -37,7 +37,7 @@ def get_finbert_sentiment(text):
     return sentiment
 
 # Load CSV file
-df = pd.read_csv(r"C:/Users/Lenovo/Documents/Experiment/scraping/data/main_jpm_transcripts.csv", index_col=0)
+df = pd.read_csv(r"FinSight/data/main_jpm_transcripts.csv", index_col=0)
 
 # Clean column names
 df.columns = df.columns.str.strip()

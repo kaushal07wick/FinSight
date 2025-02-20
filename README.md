@@ -60,12 +60,11 @@
 
 | **Sentiment Analysis** | **Vector Search Results** |  
 |------------------------|--------------------------|  
-| ![Sentiment](screenshots/sentiment.png) | ![Search](screenshots/search.png) |  
+| ![Sentiment](images/senti.png) | ![Search](images/ai_search.png) |  
 
 ## 🛠️ Roadmap  
 
 - [ ] Integrate **real-time stock price correlation**  
-- [ ] Enhance **sentiment model with LLM-based evaluation**  
 - [ ] Deploy **on cloud with CI/CD pipelines**  
 
 ## 📝 License  
