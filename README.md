@@ -47,7 +47,7 @@
    streamlit run app.py  
    ```  
 
-5. **Optional : Airflow DAG can run everyday or every 3 months (earnings call publishing schedule)
+5. **Optional** : Airflow DAG can run everyday or every 3 months (earnings call publishing schedule)
 
 ## 📊 How It Works  
 

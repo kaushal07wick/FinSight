@@ -10,9 +10,19 @@ from sklearn.manifold import TSNE
 import plotly.graph_objects as go
 
 # Initialize Qdrant client
-client = QdrantClient("localhost", port=6333)
-embedder = TextEmbedding()
+# client = QdrantClient("localhost", port=6333)
 
+QDRANT_CLOUD_URL = st.secrets['URL']
+QDRANT_CLOUD_API_KEY= st.secrets['API_KEY']
+
+client = QdrantClient(
+    url=QDRANT_CLOUD_URL,
+    api_key=QDRANT_CLOUD_API_KEY,
+)
+
+#print(qdrant_client.get_collections())
+
+embedder = TextEmbedding()
 # Load the stored CSV with scraped data and sentiment analysis
 @st.cache_data
 def load_data():
