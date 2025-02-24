@@ -37,7 +37,7 @@ def load_sentiment_data():
 sent_df = load_sentiment_data()
 
 # Streamlit App UI
-st.title("AI-Powered Financial Data Dashboard")
+st.title("Earnings Call Transcript Analysis & Financial KPI Extraction ")
 
 # Sidebar Navigation
 option = st.sidebar.radio(
@@ -218,4 +218,16 @@ elif option == "Embeddings Explorer":
         sns.scatterplot(x=df_plot["x"], y=df_plot["y"], ax=ax)
         ax.set_title("Embedding Similarities (t-SNE)")
         st.pyplot(fig)
+
+    st.markdown("""**About This Chart**  This visualization represents JPMorgan's earnings call transcripts in a **2D space**, where each dot corresponds to a transcript. The positions are derived from **text embeddings**, which convert the meaning of each transcript into a numerical format. Since embeddings exist in a high-dimensional space, we use **t-SNE (t-Distributed Stochastic Neighbor Embedding)** to reduce them to two dimensions for easier interpretation.  ### **How to Read This Chart**  
+- **Dots closer together represent transcripts with similar content**, indicating earnings calls that discussed related topics, strategies, or sentiments.  
+- **Dots farther apart signify differences in discussions**, showing shifts in focus due to economic changes, policy updates, or financial strategies.  
+
+### **Why This Matters for Earnings Calls**  
+This visualization helps analyze trends in JPMorgan’s financial discussions over time by:  
+✅ Identifying **common themes** across earnings calls.  
+✅ Spotting **changes in discussion focus**, such as reactions to economic downturns or regulatory shifts.  
+✅ Enhancing **sentiment analysis** by linking similar transcripts and detecting tone shifts.  
+
+This allows for **deeper insights into JPMorgan’s financial outlook and strategic priorities**, making it a powerful tool for analysts and investors.""")
 
